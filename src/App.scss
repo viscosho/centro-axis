@@ -8,8 +8,7 @@
 }
 
 .App-wrapper {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: $axis_blue;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,5 +16,5 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: $axis_purple;
 }
