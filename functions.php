@@ -9,6 +9,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
+require get_stylesheet_directory() . '/classes/class-core.php';
+$theme_instance = \centro_axis\classes\Core::get_instance();
+
+
 /**
  * Removes the parent themes stylesheet and scripts from inc/enqueue.php
  *
@@ -40,13 +44,3 @@ function theme_enqueue_styles() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
-
-/**
- * Child Text Domain
- *
- * @return void
- */
-function add_child_theme_textdomain() {
-	load_child_theme_textdomain( 'centro-axis', get_stylesheet_directory() . '/languages' );
-}
-add_action( 'after_setup_theme', 'add_child_theme_textdomain' );

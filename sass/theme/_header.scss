@@ -1,0 +1,22 @@
+#wrapper-navbar {
+	#main-nav.bg-primary {
+		background-color: white !important;
+		.navbar-brand {
+			img {
+				max-width: 200px;
+			}
+		}
+		.navbar-toggler-icon {
+			background-color: $secondary;
+		}
+		#navbarNavDropdown {
+			.navbar-nav {
+				.active>.nav-link, .nav-link {
+					color: $secondary;
+					font-size: 20px;
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+}

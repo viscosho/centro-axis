@@ -1,0 +1,19 @@
+#page-wrapper {
+	padding: 0;
+	>.container-fluid {
+		padding: 0;
+		#primary {
+			padding: 0;
+			#main {
+				> article {
+					>.entry-header {
+						display: none;
+						+ .wp-post-image {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}

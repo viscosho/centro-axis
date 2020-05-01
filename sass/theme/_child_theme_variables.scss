@@ -1,14 +1,90 @@
-// Use this file to overwrite the basic Bootstrap variables and add your own variables
-// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder. 
-// Just copy a variable from /sass/bootstrap/_variables.scss, paste it here and edit the value.
-// As example you find one of the most important Bootstrap variable below: $brand-primary.
-// Thats the ugly Bootstrap blue used for all the links, primary buttons etc.
-// Just add your color code here, compile the theme.scss file to change this color everywhere
-
 
 //
 // Color system
 //
 
-$primary: blue;
+$primary: #28B7B4;
+$secondary: #814493;
+$blue: #28B7B4;
+$dark-blue: darken( $blue, 20% );
+$nav-blue: #005762;
+$orange: #FAAB18;
+$dark-orange: #EC9900;
+$purple: #814493;
+$dark-purple: darken( $purple, 20% );
+$light-grey: #F6F6F6;
+$grey: #4A4A4A;
+$dark-grey: #222222;
 
+
+.wrapper {
+	#content {
+		// Gutenberg Colors
+		.has-blue-color {
+			color: $blue;
+		}
+		.has-blue-background-color {
+			background-color: $blue;
+		}
+		.has-dark-blue-color {
+			color: $dark-blue;
+		}
+		.has-dark-blue-background-color {
+			background-color: $dark-blue;
+		}
+		.has-purple-color {
+			color: $purple;
+		}
+		.has-purple-background-color {
+			background-color: $purple;
+		}
+		.has-dark-purple-color {
+			color: $dark-purple;
+		}
+		.has-dark-purple-background-color {
+			background-color: $dark-purple;
+		}
+		.has-dark-grey-color {
+			color: $dark-grey;
+		}
+		.has-dark-grey-background-color {
+			background-color: $dark-grey;
+		}
+		.has-light-grey-color {
+			color: $light-grey;
+		}
+		.has-light-grey-background-color {
+			background-color: $light-grey;
+		}
+		.has-orange-color {
+			color: $orange;
+		}
+		.has-orange-background-color {
+			background-color: $orange;
+		}
+		.has-dark-orange-color {
+			color: $dark-orange;
+		}
+		.has-dark-orange-background-color {
+			background-color: $dark-orange;
+		}
+		.has-grey-color {
+			color: $grey;
+		}
+		.has-grey-background-color {
+			background-color: $grey;
+		}
+		.has-white-color {
+			color: white;
+		}
+		.has-white-background-color {
+			background-color: white;
+		}
+		.has-black-color {
+			color: black;
+		}
+		.has-black-background-color {
+			background-color: black;
+		}
+	}
+}
