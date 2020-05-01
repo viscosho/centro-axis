@@ -15,6 +15,9 @@ var del = require( 'del' );
 var cleanCSS = require( 'gulp-clean-css' );
 var replace = require( 'gulp-replace' );
 var autoprefixer = require( 'gulp-autoprefixer' );
+var sort = require('gulp-sort');
+var wppot = require('gulp-wp-pot');
+var gettext = require('gulp-gettext');
 
 // Configuration file to keep your code DRY
 var cfg = require( './gulpconfig.json' );
@@ -200,6 +203,42 @@ gulp.task( 'copy-assets', function() {
 
     return stream;
 });
+
+// Centro Axis translate files
+gulp.task('wordpress-pot', function(done) {
+	return gulp.src('**/*.php')
+		.pipe(sort())
+		.pipe(wppot({
+			domain: 'centro-axis',
+			package: 'centro-axis',
+			team: 'CentroAxis <centroaxis@centroaxis.com>'
+		}))
+		.pipe(gulp.dest('languages/centro-axis.pot')),
+		done();
+});
+
+gulp.task('wordpress-po', function(done) {
+	return gulp.src('**/*.php')
+		.pipe(sort())
+		.pipe(wppot({
+			domain: 'centro-axis',
+			package: 'centro-axis',
+			team: 'CentroAxis <centroaxis@centroaxis.com>'
+		}))
+		.pipe(gulp.dest('languages/en_EN.po')),
+		done();
+});
+
+gulp.task('wordpress-po-mo', gulp.series( ['wordpress-po'], function(done) {
+	return gulp.src('languages/en_EN.po')
+		.pipe(gettext())
+		.pipe(gulp.dest('languages')),
+		done();
+}));
+
+gulp.task('wordpress-lang', gulp.series( ['wordpress-pot', 'wordpress-po-mo'] , function(done) {
+	done();
+}));
 
 // Deleting the files distributed by the copy-assets task
 gulp.task( 'clean-vendor-assets', function() {
