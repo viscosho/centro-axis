@@ -12,8 +12,60 @@
 							display: none;
 						}
 					}
+					.entry-content {
+						.home-banner {
+							.ugb-inner-block {
+								.ugb-header__item {
+									@media (max-width: 768px) {
+										padding: 6rem 2rem;
+									}
+								}
+							}
+							.ugb-content-wrapper {
+								background-color: rgba(129, 68, 147,0.6);
+								padding: 1rem;
+								@media (min-width: 769px) {
+									padding: 2rem;
+									max-width: 850px;
+									margin-left: auto;
+									margin-right: auto;
+								}
+							}
+						}
+						.wp-block-embed-youtube {
+							iframe {
+								min-height: 250px;
+								height: 250px;
+							}
+						}
+					}
+					.instagram-container {
+						&.ugb-container.ugb-container--v2.ugb-container--width-small {
+							.ugb-container__content-wrapper {
+								@media (max-width: 600px) {
+									width: 90%;
+								}
+							}
+						}
+					}
 				}
 			}
 		}
 	}
 }
+
+.pum-container {
+	div.wpforms-container-full {
+		.wpforms-form {
+			input[type=submit],
+			button[type=submit],
+			.wpforms-page-button {
+				background-color: $primary;
+				border: 1px solid $primary;
+				color: white;
+				border-radius: 5px;
+			}
+		}
+	}
+}
+

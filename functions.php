@@ -44,3 +44,5 @@ function theme_enqueue_styles() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
+
+require_once get_stylesheet_directory() . '/includes/functions.php';
