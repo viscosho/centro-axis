@@ -10692,13 +10692,19 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .content-area h1, .content
         #page-wrapper > .container-fluid #primary #main > article .instagram-container.ugb-container.ugb-container--v2.ugb-container--width-small .ugb-container__content-wrapper {
           width: 90%; } }
 
-.pum-container div.wpforms-container-full .wpforms-form input[type=submit],
-.pum-container div.wpforms-container-full .wpforms-form button[type=submit],
+.pum-container div.wpforms-container-full .wpforms-form input[type="submit"],
+.pum-container div.wpforms-container-full .wpforms-form button[type="submit"],
 .pum-container div.wpforms-container-full .wpforms-form .wpforms-page-button {
   background-color: #28B7B4;
   border: 1px solid #28B7B4;
   color: white;
   border-radius: 5px; }
+
+.wp-embed-responsive .wp-block-embed.wp-embed-aspect-16-9 .wp-block-embed__wrapper:before {
+  padding-top: 50%; }
+
+.wp-embed-responsive .wp-block-embed.wp-embed-aspect-4-3 .wp-block-embed__wrapper:before {
+  padding-top: 50%; }
 
 body.woocommerce .woocommerce-breadcrumb {
   background: rgba(40, 183, 180, 0.6);
@@ -10707,25 +10713,46 @@ body.woocommerce .woocommerce-breadcrumb {
   margin-right: -15px; }
 
 body.woocommerce div.product {
-  max-width: 1100px;
+  max-width: 1200px;
   margin-top: 3rem;
   margin-bottom: 3rem;
   margin-left: auto;
   margin-right: auto;
   -webkit-box-shadow: 0 5px 5px 0 rgba(18, 63, 82, 0.035), 0 0 0 1px rgba(176, 181, 193, 0.2);
           box-shadow: 0 5px 5px 0 rgba(18, 63, 82, 0.035), 0 0 0 1px rgba(176, 181, 193, 0.2);
-  padding: 3rem;
-  border-radius: 6px; }
+  border-radius: 12px;
+  padding: 35px; }
 
 body.woocommerce.archive #main > .woocommerce-products-header,
 body.woocommerce.archive #main > .woocommerce-notices-wrapper,
 body.woocommerce.archive #main > .products {
-  max-width: 1100px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto; }
 
 body.woocommerce.archive #main > .woocommerce-result-count,
 body.woocommerce.archive #main > .woocommerce-ordering {
   display: none; }
+
+.woocommerce-js .wp-block-button__link {
+  color: #28B7B4;
+  background: white;
+  border: 2px solid #28B7B4;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+  @media (max-width: 600px) {
+    .woocommerce-js .wp-block-button__link {
+      width: 100%; } }
+  .woocommerce-js .wp-block-button__link:hover {
+    color: white;
+    background-color: #28B7B4; }
 
 /*# sourceMappingURL=child-theme.css.map */
