@@ -14,6 +14,8 @@
 					}
 					.entry-content {
 						.home-banner {
+							padding-top: 50px !important;
+							padding-bottom: 50px !important;
 							.ugb-inner-block {
 								.ugb-header__item {
 									@media (max-width: 768px) {
@@ -22,7 +24,7 @@
 								}
 							}
 							.ugb-content-wrapper {
-								background-color: rgba(129, 68, 147, 0.6);
+								background-color: rgba(224, 90, 140, 0.4);
 								padding: 1rem;
 								@media (min-width: 769px) {
 									padding: 2rem;

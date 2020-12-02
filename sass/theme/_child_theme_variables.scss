@@ -1,21 +1,19 @@
-
 //
 // Color system
 //
 
-$primary: #28B7B4;
-$secondary: #814493;
-$blue: #28B7B4;
-$dark-blue: darken( $blue, 20% );
+$primary: #5cc6d0;
+$secondary: #ec268f;
+$blue: #6bb0c7;
+$dark-blue: darken($blue, 20%);
 $nav-blue: #005762;
-$orange: #FAAB18;
-$dark-orange: #EC9900;
-$purple: #814493;
-$dark-purple: darken( $purple, 20% );
-$light-grey: #F6F6F6;
-$grey: #4A4A4A;
+$orange: #faab18;
+$dark-orange: #ec9900;
+$purple: #ef5a91;
+$dark-purple: darken($purple, 20%);
+$light-grey: #f6f6f6;
+$grey: #727376;
 $dark-grey: #222222;
-
 
 .wrapper {
 	#content {

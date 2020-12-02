@@ -2,19 +2,19 @@
 /**
  * Class FrontEnd
  *
- * @package   centro_axis\classes
- * @author    Centro Axis
+ * @package   tina_martina\classes
+ * @author    Tina Martina
  * @license   GPL-2.0+
  * @link
- * @copyright 2020 Centro Axis
+ * @copyright 2020 Tina Martina
  */
 
-namespace centro_axis\classes;
+namespace tina_martina\classes;
 
 /**
  * Class Frontend
  *
- * @package centro_axis\classes
+ * @package tina_martina\classes
  */
 class Frontend {
 
@@ -23,7 +23,7 @@ class Frontend {
 	 *
 	 * @since 1.0.0
 	 *
-	 * @var      object centro_axis\classes\Frontend()
+	 * @var      object tina_martina\classes\Frontend()
 	 */
 	protected static $instance = null;
 
@@ -43,7 +43,7 @@ class Frontend {
 	 *
 	 * @since 1.0.0
 	 *
-	 * @return    object \centro_axis\classes\Frontend()    A single instance of this class.
+	 * @return    object \tina_martina\classes\Frontend()    A single instance of this class.
 	 */
 	public static function get_instance() {
 		// If the single instance hasn't been set, set it now.
@@ -61,52 +61,52 @@ class Frontend {
 	public function wyf_color_palette_setup() {
 		add_theme_support( 'editor-color-palette', array(
 			array(
-				'name'  => esc_html__( 'Blue', 'centro-axis' ),
+				'name'  => esc_html__( 'Blue', 'tina-martina' ),
 				'slug'  => 'blue',
-				'color' => '#28B7B4',
+				'color' => '#5cc6d0',
 			),
 			array(
-				'name'  => esc_html__( 'Dark Blue', 'centro-axis' ),
+				'name'  => esc_html__( 'Dark Blue', 'tina-martina' ),
 				'slug'  => 'dark-blue',
 				'color' => '#166362',
 			),
 			array(
-				'name'  => esc_html__( 'Orange', 'centro-axis' ),
+				'name'  => esc_html__( 'Orange', 'tina-martina' ),
 				'slug'  => 'orange',
 				'color' => '#FAAB18',
 			),
 			array(
-				'name'  => esc_html__( 'Dark Orange', 'centro-axis' ),
+				'name'  => esc_html__( 'Dark Orange', 'tina-martina' ),
 				'slug'  => 'dark-orange',
 				'color' => '#EC9900',
 			),
 			array(
-				'name'  => esc_html__( 'Purple', 'centro-axis' ),
+				'name'  => esc_html__( 'Purple', 'tina-martina' ),
 				'slug'  => 'purple',
-				'color' => '#814493',
+				'color' => '#ef5a91',
 			),
 			array(
-				'name'  => esc_html__( 'Dark Purple', 'centro-axis' ),
+				'name'  => esc_html__( 'Dark Purple', 'tina-martina' ),
 				'slug'  => 'dark-purple',
-				'color' => '#44244d',
+				'color' => '#E05A8C',
 			),
 			array(
-				'name'  => esc_html__( 'Light grey', 'centro-axis' ),
+				'name'  => esc_html__( 'Light grey', 'tina-martina' ),
 				'slug'  => 'light-grey',
 				'color' => '#F6F6F6',
 			),
 			array(
-				'name'  => esc_html__( 'Dark Grey', 'centro-axis' ),
+				'name'  => esc_html__( 'Dark Grey', 'tina-martina' ),
 				'slug'  => 'dark-grey',
-				'color' => '#222222',
+				'color' => '#727376',
 			),
 			array(
-				'name'  => esc_html__( 'White', 'centro-axis' ),
+				'name'  => esc_html__( 'White', 'tina-martina' ),
 				'slug'  => 'white',
 				'color' => '#ffffff',
 			),
 			array(
-				'name'  => esc_html__( 'Black', 'centro-axis' ),
+				'name'  => esc_html__( 'Black', 'tina-martina' ),
 				'slug'  => 'black',
 				'color' => '#000000',
 			),

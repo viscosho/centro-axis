@@ -1,5 +1,5 @@
 {
-  "name": "centro-axis",
+  "name": "tina-martina",
   "version": "0.5.5",
   "description": "Basic Child Theme for UnderStrap Theme Framework: https://github.com/holger1411/understrap",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/holger1411/centro-axis.git"
+    "url": "https://github.com/holger1411/tina-martina.git"
   },
   "keywords": [
     "wordpress",
@@ -20,7 +20,7 @@
   "author": "Holger Koenemann",
   "license": "GPL-2.0",
   "bugs": {
-    "url": "https://github.com/holger1411/centro-axis/issues"
+    "url": "https://github.com/holger1411/tina-martina/issues"
   },
   "homepage": "https://understrap.com",
   "dependencies": {
@@ -30,6 +30,7 @@
     "font-awesome": "^4.7.0",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
+    "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^4.0.0",
     "gulp-clone": "^2.0.1",
     "gulp-concat": "^2.6.1",
@@ -39,6 +40,7 @@
     "gulp-imagemin": "^5.0.3",
     "gulp-merge": "^0.1.1",
     "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.0",
     "gulp-rename": "^1.4.0",
     "gulp-replace": "^1.0.0",
     "gulp-rimraf": "^0.2.2",
@@ -49,10 +51,13 @@
     "gulp-uglify": "^3.0.2",
     "gulp-watch": "^5.0.1",
     "gulp-wp-pot": "^2.4.2",
+    "jquery": "^1.9.1",
     "merge2": "^1.2.3",
     "popper.js": "^1.15.0",
     "run-sequence": "^2.2.1",
-    "understrap": "^0.9.1",
     "undescores-for-npm": "^1.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9"
   }
 }

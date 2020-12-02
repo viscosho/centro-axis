@@ -1,9 +1,9 @@
 #wrapper-navbar {
-	#main-nav.bg-primary {
+	.bg-primary {
 		background-color: white !important;
 		.navbar-brand {
 			img {
-				max-width: 200px;
+				max-width: 100px;
 			}
 		}
 		.navbar-toggler-icon {
@@ -11,12 +11,27 @@
 		}
 		#navbarNavDropdown {
 			.navbar-nav {
-				.active>.nav-link, .nav-link {
+				.active > .nav-link,
+				.nav-link {
 					color: $secondary;
 					font-size: 20px;
 					text-transform: uppercase;
 				}
 			}
 		}
+	}
+}
+
+.home {
+	#wrapper-navbar {
+		z-index: 2;
+		position: relative;
+		.bg-primary {
+			background-color: transparent !important;
+		}
+	}
+	#page-wrapper {
+		position: relative;
+		top: -115px;
 	}
 }

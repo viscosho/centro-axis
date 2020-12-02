@@ -1,8 +1,8 @@
 <?php
 /**
- * Centro Axis Child functions
+ * Tina Martina Child functions
  *
- * @package centro-axis
+ * @package tina-martina
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 require get_stylesheet_directory() . '/classes/class-core.php';
-$theme_instance = \centro_axis\classes\Core::get_instance();
+$theme_instance = \tina_martina\classes\Core::get_instance();
 
 
 /**

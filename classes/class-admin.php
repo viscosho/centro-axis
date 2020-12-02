@@ -2,19 +2,19 @@
 /**
  * Class Admin
  *
- * @package   centro_axis\classes
- * @author    Centro Axis
+ * @package   tina_martina\classes
+ * @author    Tina Martina
  * @license   GPL-2.0+
  * @link
- * @copyright 2020 Centro Axis
+ * @copyright 2020 Tina Martina
  */
 
-namespace centro_axis\classes;
+namespace tina_martina\classes;
 
 /**
  * Class Admin
  *
- * @package centro_axis\classes
+ * @package tina_martina\classes
  */
 class Admin {
 
@@ -23,7 +23,7 @@ class Admin {
 	 *
 	 * @since 1.0.0
 	 *
-	 * @var      object centro_axis\classes\Admin()
+	 * @var      object tina_martina\classes\Admin()
 	 */
 	protected static $instance = null;
 
@@ -42,7 +42,7 @@ class Admin {
 	 *
 	 * @since 1.0.0
 	 *
-	 * @return    object \centro_axis\classes\Admin()    A single instance of this class.
+	 * @return    object \tina_martina\classes\Admin()    A single instance of this class.
 	 */
 	public static function get_instance() {
 		// If the single instance hasn't been set, set it now.

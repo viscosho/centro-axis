@@ -2,19 +2,19 @@
 /**
  * Class Core
  *
- * @package   centro_axis\classes
- * @author    Centro Axis
+ * @package   tina_martina\classes
+ * @author    Tina Martina
  * @license   GPL-2.0+
  * @link
- * @copyright 2020 Centro Axis
+ * @copyright 2020 Tina Martina
  */
 
-namespace centro_axis\classes;
+namespace tina_martina\classes;
 
 /**
  * Class Core
  *
- * @package centro_axis\classes
+ * @package tina_martina\classes
  */
 class Core {
 
@@ -23,35 +23,35 @@ class Core {
 	 *
 	 * @since 1.0.0
 	 *
-	 * @var      object centro_axis\classes\Core()
+	 * @var      object tina_martina\classes\Core()
 	 */
 	protected static $instance = null;
 
 	/**
 	 * Setup
 	 *
-	 * @var object centro_axis\classes\Setup();
+	 * @var object tina_martina\classes\Setup();
 	 */
 	public $setup;
 
 	/**
 	 * Admin
 	 *
-	 * @var object centro_axis\classes\Admin();
+	 * @var object tina_martina\classes\Admin();
 	 */
 	public $admin;
 
 	/**
 	 * FrontEnd
 	 *
-	 * @var object centro_axis\classes\Frontend();
+	 * @var object tina_martina\classes\Frontend();
 	 */
 	public $frontend;
 
 	/**
 	 * Search
 	 *
-	 * @var object centro_axis\classes\Search();
+	 * @var object tina_martina\classes\Search();
 	 */
 	public $search;
 
@@ -78,7 +78,7 @@ class Core {
 	 *
 	 * @since 1.0.0
 	 *
-	 * @return    object centro_axis\classes\Core()    A single instance of this class.
+	 * @return    object tina_martina\classes\Core()    A single instance of this class.
 	 */
 	public static function get_instance() {
 

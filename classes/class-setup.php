@@ -2,19 +2,19 @@
 /**
  * Class Setup
  *
- * @package   centro_axis\classes
- * @author    Centro Axis
+ * @package   tina_martina\classes
+ * @author    Tina Martina
  * @license   GPL-2.0+
  * @link
- * @copyright 2020 Centro Axis
+ * @copyright 2020 Tina Martina
  */
 
-namespace centro_axis\classes;
+namespace tina_martina\classes;
 
 /**
  * Class Setup
  *
- * @package centro_axis\classes
+ * @package tina_martina\classes
  */
 class Setup {
 
@@ -23,7 +23,7 @@ class Setup {
 	 *
 	 * @since 1.0.0
 	 *
-	 * @var      object centro_axis\classes\Setup()
+	 * @var      object tina_martina\classes\Setup()
 	 */
 	protected static $instance = null;
 
@@ -44,7 +44,7 @@ class Setup {
 	 *
 	 * @since 1.0.0
 	 *
-	 * @return    object \centro_axis\classes\Setup()    A single instance of this class.
+	 * @return    object \tina_martina\classes\Setup()    A single instance of this class.
 	 */
 	public static function get_instance() {
 		// If the single instance hasn't been set, set it now.
@@ -60,7 +60,7 @@ class Setup {
 	 * @return void
 	 */
 	public function language_setup() {
-		load_child_theme_textdomain( 'centro-axis', get_stylesheet_directory() . '/languages' );
+		load_child_theme_textdomain( 'tina-martina', get_stylesheet_directory() . '/languages' );
 	}
 
 	/**
