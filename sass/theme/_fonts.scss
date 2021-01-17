@@ -1,15 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+@font-face {
+	font-family: "intro_script_rh2_base";
+	src: url("/wp-content/themes/tina-martina/fonts/introscriptr-webfont.woff2")
+			format("woff2"),
+		url("/wp-content/themes/tina-martina/fonts/introscriptr-webfont.woff")
+			format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
 
 body {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: normal;
+	font-family: "Lato", sans-serif;
+	font-weight: 300;
 	font-style: normal;
 	font-size: 15px;
 	color: #4a4a4a;
 }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .content-area h1, .content-area h2, .content-area h3, .content-area h4, .content-area h5, .content-area h6, .content-area .widget-title, .widget-area h1, .widget-area h2, .widget-area h3, .widget-area h4, .widget-area h5, .widget-area h6, .widget-area .widget-title {
-
-	font-family: 'Karla', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.content-area h1,
+.content-area h2,
+.content-area h3,
+.content-area h4,
+.content-area h5,
+.content-area h6,
+.content-area .widget-title,
+.widget-area h1,
+.widget-area h2,
+.widget-area h3,
+.widget-area h4,
+.widget-area h5,
+.widget-area h6,
+.widget-area .widget-title,
+.ugb-header__subtitle,
+.ugb-button,
+.wp-block-button__link {
+	font-family: "intro_script_rh2_base", sans-serif;
 }
